@@ -1,2 +1,1 @@
-# covid-testing-location-form
-Prototype form for use at testing locations to push data to Salesforce
+# Prototype form for data entry at testing locations
