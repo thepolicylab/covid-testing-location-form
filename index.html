@@ -81,171 +81,15 @@ width: device-width;
                 </div>
             </div>
 
-            <form class="example-form-contentv">
-
-
-                <fieldset class="usa-fieldset padding-bottom-8" id="test-clicker">
-                    <legend class="usa-legend">Did you receive a mailer asking you to participate in testing?</legend>
-                    <!-- <span class="usa-hint" id="symptomsHint"></span> -->
-                    <br/>
-                    <div class="grid-row grid-gap">
-                        <div class="usa-radio tablet:grid-col-3">
-                          <input class="usa-radio__input" id="yes-mailer" type="radio" name="mailer" value="yes-mailer">
-                          <label class="usa-radio__label" for="yes-mailer">Yes, I received a mailer</label>
-                        </div>
-                        <div class="usa-radio tablet:grid-col-3">
-                          <input class="usa-radio__input" id="no-mailer" type="radio" name="mailer" value="no-mailer">
-                          <label class="usa-radio__label" for="no-mailer">No, I did not</label>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset class="usa-fieldset padding-bottom-4">
-                    <legend class="usa-legend">What symptoms have you experienced in the past 24 hours?</legend>
-                    <span class="usa-hint" id="symptomsHint">Select all that apply</span>
-                    <br/><br/>
-                    <div class="grid-row grid-gap">
-                      <div class="usa-checkbox tablet:grid-col-3">
-                          <input class="usa-checkbox__input" id="fever" type="checkbox" name="symptoms-1" value="fever">
-                          <label class="usa-checkbox__label" for="fever">Fever</label>
-                      </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Pneumonia" type="checkbox" name="symptoms-1" value="Pneumonia">
-                            <label class="usa-checkbox__label" for="Pneumonia">Pneumonia</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Sore-throat" type="checkbox" name="symptoms-1" value="Sore-throat">
-                            <label class="usa-checkbox__label" for="Sore-throat">Sore throat</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Runny-nose" type="checkbox" name="symptoms-1" value="Runny-nose">
-                            <label class="usa-checkbox__label" for="Runny-nose">Runny nose</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Shortness-of-breath" type="checkbox" name="symptoms-1" value="Shortness-of-breath">
-                            <label class="usa-checkbox__label" for="Shortness-of-breath">Shortness of breath</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Congestion" type="checkbox" name="symptoms-1" value="Congestion">
-                            <label class="usa-checkbox__label" for="Congestion">Congestion</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Myalgia" type="checkbox" name="symptoms-1" value="Myalgia">
-                            <label class="usa-checkbox__label" for="Myalgia">Myalgia</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Body-aches" type="checkbox" name="symptoms-1" value="Body-aches">
-                            <label class="usa-checkbox__label" for="Body-aches">Body aches</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Cough" type="checkbox" name="symptoms-1" value="Cough">
-                            <label class="usa-checkbox__label" for="Cough">Cough</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Headache" type="checkbox" name="symptoms-1" value="Headache">
-                            <label class="usa-checkbox__label" for="Headache">Headache</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Chills" type="checkbox" name="symptoms-1" value="Chills">
-                            <label class="usa-checkbox__label" for="Chills">Chills</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="GI-Upset" type="checkbox" name="symptoms-1" value="GI-Upset">
-                            <label class="usa-checkbox__label" for="GI-Upset">GI Upset</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-9">
-                            <input class="usa-checkbox__input" id="no-symptoms" type="checkbox" name="symptoms-1" value="no-symptoms">
-                            <label class="usa-checkbox__label" for="no-symptoms">I have not experienced any symptoms</label>
-                        </div>
-                        <!-- <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Symptoms1-Other" type="checkbox" name="symptoms-1" value="Symptoms1-Other">
-                            <label class="usa-checkbox__label" for="Symptoms1-Other">Other</label>
-                        </div> -->
-                        <div class="usa-checkbox tablet:grid-col-9">
-                          <label class="usa-label" for="Symptoms1-Other">Other</label>
-                          <input class="usa-input" id="Symptoms1-Other" name="Symptoms1-Other" type="text" aria-required="false">
-                        </div>
-                    </div>
-                </fieldset>
+            <form class="example-form-content">
 
 
 
-                <fieldset class="usa-fieldset padding-bottom-4 margin-top-4 random-sample-questions">
-                    <legend class="usa-legend">What symptoms have you experienced since January 1st, 2020?</legend>
-                    <span class="usa-hint" id="symptomsHint">Select all that apply</span>
-                    <br/><br/>
-                    <div class="grid-row grid-gap">
-
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="fever-Jan" type="checkbox" name="symptoms-2" value="fever-Jan">
-                            <label class="usa-checkbox__label" for="fever-Jan">Fever</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Pneumonia-Jan" type="checkbox" name="symptoms-2" value="Pneumonia-Jan">
-                            <label class="usa-checkbox__label" for="Pneumonia-Jan">Pneumonia</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Sore-throat-Jan" type="checkbox" name="symptoms-2" value="Sore-throat-Jan">
-                            <label class="usa-checkbox__label" for="Sore-throat-Jan">Sore throat</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Runny-nose-Jan" type="checkbox" name="symptoms-2" value="Runny-nose-Jan">
-                            <label class="usa-checkbox__label" for="Runny-nose-Jan">Runny nose</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Shortness-of-breath-Jan" type="checkbox" name="symptoms-2" value="Shortness-of-breath-Jan">
-                            <label class="usa-checkbox__label" for="Shortness-of-breath-Jan">Shortness of breath</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Congestion-Jan" type="checkbox" name="symptoms-2" value="Congestion-Jan">
-                            <label class="usa-checkbox__label" for="Congestion-Jan">Congestion</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Myalgia-Jan" type="checkbox" name="symptoms-2" value="Myalgia-Jan">
-                            <label class="usa-checkbox__label" for="Myalgia-Jan">Myalgia</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Body-aches-Jan" type="checkbox" name="symptoms-2" value="Body-aches-Jan">
-                            <label class="usa-checkbox__label" for="Body-aches-Jan">Body aches</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Cough-Jan" type="checkbox" name="symptoms-2" value="Cough-Jan">
-                            <label class="usa-checkbox__label" for="Cough-Jan">Cough</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Headache-Jan" type="checkbox" name="symptoms-2" value="Headache-Jan">
-                            <label class="usa-checkbox__label" for="Headache-Jan">Headache</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Chills-Jan" type="checkbox" name="symptoms-2" value="Chills-Jan">
-                            <label class="usa-checkbox__label" for="Chills-Jan">Chills</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="GI-Upset-Jan" type="checkbox" name="symptoms-2" value="GI-Upset-Jan">
-                            <label class="usa-checkbox__label" for="GI-Upset-Jan">GI Upset</label>
-                        </div>
-                        <div class="usa-checkbox tablet:grid-col-9">
-                            <input class="usa-checkbox__input" id="no-symptoms-Jan" type="checkbox" name="symptoms-2" value="no-symptoms-Jan">
-                            <label class="usa-checkbox__label" for="no-symptoms-Jan">I have not experienced any symptoms</label>
-                        </div>
-                        <!-- <div class="usa-checkbox tablet:grid-col-3">
-                            <input class="usa-checkbox__input" id="Symptoms1-Other" type="checkbox" name="symptoms-1" value="Symptoms1-Other">
-                            <label class="usa-checkbox__label" for="Symptoms1-Other">Other</label>
-                        </div> -->
-                        <div class="usa-checkbox tablet:grid-col-9">
-                          <label class="usa-label" for="Symptoms2-Other">Other</label>
-                          <input class="usa-input" id="Symptoms2-Other" name="Symptoms2-Other" type="text" aria-required="false">
-                        </div>
-                    </div>
-                </fieldset>
-
-
-            <hr class="margin-top-4 margin-bottom-4"/>
 
 
 
                 <fieldset class="usa-fieldset padding-bottom-4">
-                    <legend class="usa-legend padding-top-4">Name</legend>
+                    <legend class="usa-legend padding-top-2">Name</legend>
 
                     <label class="usa-label" for="first-name">First name</label>
                     <input class="usa-input" id="first-name" name="first-name" type="text" aria-required="true">
@@ -357,7 +201,77 @@ width: device-width;
 
               <hr class="margin-top-4 margin-bottom-8"/>
 
-                  <fieldset class="usa-fieldset padding-bottom-6">
+
+              <fieldset class="usa-fieldset padding-bottom-8">
+                  <legend class="usa-legend">What symptoms have you experienced in the past 24 hours?</legend>
+                  <span class="usa-hint" id="symptomsHint">Select all that apply</span>
+                  <br/><br/>
+                  <div class="grid-row grid-gap">
+                    <div class="usa-checkbox tablet:grid-col-3">
+                        <input class="usa-checkbox__input" id="fever" type="checkbox" name="symptoms-1" value="fever">
+                        <label class="usa-checkbox__label" for="fever">Fever</label>
+                    </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Pneumonia" type="checkbox" name="symptoms-1" value="Pneumonia">
+                          <label class="usa-checkbox__label" for="Pneumonia">Pneumonia</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Sore-throat" type="checkbox" name="symptoms-1" value="Sore-throat">
+                          <label class="usa-checkbox__label" for="Sore-throat">Sore throat</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Runny-nose" type="checkbox" name="symptoms-1" value="Runny-nose">
+                          <label class="usa-checkbox__label" for="Runny-nose">Runny nose</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Shortness-of-breath" type="checkbox" name="symptoms-1" value="Shortness-of-breath">
+                          <label class="usa-checkbox__label" for="Shortness-of-breath">Shortness of breath</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Congestion" type="checkbox" name="symptoms-1" value="Congestion">
+                          <label class="usa-checkbox__label" for="Congestion">Congestion</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Myalgia" type="checkbox" name="symptoms-1" value="Myalgia">
+                          <label class="usa-checkbox__label" for="Myalgia">Myalgia</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Body-aches" type="checkbox" name="symptoms-1" value="Body-aches">
+                          <label class="usa-checkbox__label" for="Body-aches">Body aches</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Cough" type="checkbox" name="symptoms-1" value="Cough">
+                          <label class="usa-checkbox__label" for="Cough">Cough</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Headache" type="checkbox" name="symptoms-1" value="Headache">
+                          <label class="usa-checkbox__label" for="Headache">Headache</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Chills" type="checkbox" name="symptoms-1" value="Chills">
+                          <label class="usa-checkbox__label" for="Chills">Chills</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="GI-Upset" type="checkbox" name="symptoms-1" value="GI-Upset">
+                          <label class="usa-checkbox__label" for="GI-Upset">GI Upset</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-9">
+                          <input class="usa-checkbox__input" id="no-symptoms" type="checkbox" name="symptoms-1" value="no-symptoms">
+                          <label class="usa-checkbox__label" for="no-symptoms">I have not experienced any symptoms</label>
+                      </div>
+                      <!-- <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Symptoms1-Other" type="checkbox" name="symptoms-1" value="Symptoms1-Other">
+                          <label class="usa-checkbox__label" for="Symptoms1-Other">Other</label>
+                      </div> -->
+                      <div class="usa-checkbox tablet:grid-col-9">
+                        <label class="usa-label" for="Symptoms1-Other">Other</label>
+                        <input class="usa-input" id="Symptoms1-Other" name="Symptoms1-Other" type="text" aria-required="false">
+                      </div>
+                  </div>
+              </fieldset>
+
+
+              <fieldset class="usa-fieldset padding-bottom-6">
                       <legend class="usa-legend">Gender</legend>
                       <span class="usa-hint" id="symptomsHint">Select how you identify for health purposes</span>
                       <br/><br/>
@@ -428,7 +342,7 @@ width: device-width;
                       </div>
                   </fieldset>
 
-                  <fieldset class="usa-fieldset padding-bottom-4">
+                  <fieldset class="usa-fieldset padding-bottom-8">
                       <legend class="usa-legend">Are you hispanic or latino?</legend>
                       <!-- <span class="usa-hint" id="symptomsHint"></span> -->
                       <br/>
@@ -447,10 +361,109 @@ width: device-width;
 
 
 
+                  <!--
+                  ADDITIONAL QUESTIONS
+                  -->
+
+
+
+
+                  <fieldset class="usa-fieldset padding-bottom-4" id="test-clicker">
+                      <legend class="usa-legend">Did you receive a mailer asking you to participate in testing?</legend>
+                      <!-- <span class="usa-hint" id="symptomsHint"></span> -->
+                      <br/>
+                      <div class="grid-row grid-gap">
+                          <div class="usa-radio tablet:grid-col-3">
+                            <input class="usa-radio__input" id="yes-mailer" type="radio" name="mailer" value="yes-mailer">
+                            <label class="usa-radio__label" for="yes-mailer">Yes, I received a mailer</label>
+                          </div>
+                          <div class="usa-radio tablet:grid-col-3">
+                            <input class="usa-radio__input" id="no-mailer" type="radio" name="mailer" value="no-mailer">
+                            <label class="usa-radio__label" for="no-mailer">No, I did not</label>
+                          </div>
+                      </div>
+                  </fieldset>
 
                   <hr class="margin-top-4 margin-bottom-8"/>
 
+
+
+
                   <h2 class="random-sample-questions" style="color: #888;">These questions will help with reopening Rhode Island:</h2>
+
+
+
+
+                  <fieldset class="usa-fieldset padding-bottom-8 margin-top-4 random-sample-questions">
+                      <legend class="usa-legend">What symptoms have you experienced since January 1st, 2020?</legend>
+                      <span class="usa-hint" id="symptomsHint">Select all that apply</span>
+                      <br/><br/>
+                      <div class="grid-row grid-gap">
+
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="fever-Jan" type="checkbox" name="symptoms-2" value="fever-Jan">
+                              <label class="usa-checkbox__label" for="fever-Jan">Fever</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Pneumonia-Jan" type="checkbox" name="symptoms-2" value="Pneumonia-Jan">
+                              <label class="usa-checkbox__label" for="Pneumonia-Jan">Pneumonia</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Sore-throat-Jan" type="checkbox" name="symptoms-2" value="Sore-throat-Jan">
+                              <label class="usa-checkbox__label" for="Sore-throat-Jan">Sore throat</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Runny-nose-Jan" type="checkbox" name="symptoms-2" value="Runny-nose-Jan">
+                              <label class="usa-checkbox__label" for="Runny-nose-Jan">Runny nose</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Shortness-of-breath-Jan" type="checkbox" name="symptoms-2" value="Shortness-of-breath-Jan">
+                              <label class="usa-checkbox__label" for="Shortness-of-breath-Jan">Shortness of breath</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Congestion-Jan" type="checkbox" name="symptoms-2" value="Congestion-Jan">
+                              <label class="usa-checkbox__label" for="Congestion-Jan">Congestion</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Myalgia-Jan" type="checkbox" name="symptoms-2" value="Myalgia-Jan">
+                              <label class="usa-checkbox__label" for="Myalgia-Jan">Myalgia</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Body-aches-Jan" type="checkbox" name="symptoms-2" value="Body-aches-Jan">
+                              <label class="usa-checkbox__label" for="Body-aches-Jan">Body aches</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Cough-Jan" type="checkbox" name="symptoms-2" value="Cough-Jan">
+                              <label class="usa-checkbox__label" for="Cough-Jan">Cough</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Headache-Jan" type="checkbox" name="symptoms-2" value="Headache-Jan">
+                              <label class="usa-checkbox__label" for="Headache-Jan">Headache</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Chills-Jan" type="checkbox" name="symptoms-2" value="Chills-Jan">
+                              <label class="usa-checkbox__label" for="Chills-Jan">Chills</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="GI-Upset-Jan" type="checkbox" name="symptoms-2" value="GI-Upset-Jan">
+                              <label class="usa-checkbox__label" for="GI-Upset-Jan">GI Upset</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-9">
+                              <input class="usa-checkbox__input" id="no-symptoms-Jan" type="checkbox" name="symptoms-2" value="no-symptoms-Jan">
+                              <label class="usa-checkbox__label" for="no-symptoms-Jan">I have not experienced any symptoms</label>
+                          </div>
+                          <!-- <div class="usa-checkbox tablet:grid-col-3">
+                              <input class="usa-checkbox__input" id="Symptoms1-Other" type="checkbox" name="symptoms-1" value="Symptoms1-Other">
+                              <label class="usa-checkbox__label" for="Symptoms1-Other">Other</label>
+                          </div> -->
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <label class="usa-label" for="Symptoms2-Other">Other</label>
+                            <input class="usa-input" id="Symptoms2-Other" name="Symptoms2-Other" type="text" aria-required="false">
+                          </div>
+                      </div>
+                  </fieldset>
+
+
 
 
                   <fieldset class="usa-fieldset padding-bottom-8 random-sample-questions" id="positive-nearby">
