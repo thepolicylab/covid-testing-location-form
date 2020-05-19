@@ -8,6 +8,10 @@
         .random-sample-questions {
           display: none;
         }
+
+        #mailer-id-question, #referral-id-question {
+          display: none;
+        }
       /* @-ms-viewport{
 width: device-width;
 } */
@@ -85,6 +89,46 @@ width: device-width;
 
 
 
+              <fieldset class="usa-fieldset padding-bottom-4">
+                  <legend class="usa-legend">Primary reason for being tested</legend>
+                  <!-- <span class="usa-hint" id="reasonHint">Hint text here</span> -->
+                  <br/>
+                  <div class="grid-row grid-gap reasons-for-testing">
+
+                    <div class="usa-radio tablet:grid-col-12">
+                      <input class="usa-radio__input" id="symptomatic" type="radio" name="reason-for-testing" value="symptomatic">
+                      <label class="usa-radio__label" for="symptomatic">I have symptoms of Covid-19</label>
+                      <!-- <span class="usa-hint" id="symptomaticHint">I've received authorizato</span> -->
+                    </div>
+                    <div class="usa-radio tablet:grid-col-12">
+                      <input class="usa-radio__input" id="random-sample" type="radio" name="reason-for-testing" value="random-sample">
+                      <label class="usa-radio__label" for="random-sample">I received a mailer</label>
+                      <!-- <span class="usa-hint" id="symptomaticHint">I was asked to participate in testing because</span> -->
+                    </div>
+                    <div class="usa-radio tablet:grid-col-12">
+                      <input class="usa-radio__input" id="sentinel-group" type="radio" name="reason-for-testing" value="sentinel-group">
+                      <label class="usa-radio__label" for="sentinel-group">I'm part of the sentinel group</label>
+                    </div>
+                    <div class="usa-radio tablet:grid-col-12">
+                      <input class="usa-radio__input" id="volunteer-asymptomatic" type="radio" name="reason-for-testing" value="volunteer-asymptomatic">
+                      <label class="usa-radio__label" for="volunteer-asymptomatic">I don't have symptoms, but want to help</label>
+                    </div>
+
+                    <div class="usa-checkbox tablet:grid-col-12 padding-bottom-2" id="mailer-id-question">
+                      <label class="usa-label" for="mailer-id">Mailer ID</label>
+                      <span class="usa-hint" id="mailer-id">The ID number on your mailer, if available</span>
+                      <input class="usa-input" id="mailer-id" name="mailer-id" type="text" aria-required="false">
+                    </div>
+
+                    <div class="usa-checkbox tablet:grid-col-12 padding-bottom-2" id="referral-id-question">
+                      <label class="usa-label" for="mailer-id">Referral ID</label>
+                      <span class="usa-hint" id="mailer-id">The referral ID number from your doctor, if available</span>
+                      <input class="usa-input" id="mailer-id" name="mailer-id" type="text" aria-required="false">
+                    </div>
+
+
+                  </div>
+              </fieldset>
 
 
 
@@ -158,6 +202,11 @@ width: device-width;
 
                       <label class="usa-label" for="zip">ZIP</label>
                       <input class="usa-input usa-input--medium" id="zip" name="zip" type="text" pattern="[\d]{5}(-[\d]{4})?">
+
+                      <div class="usa-checkbox padding-top-4">
+                          <input class="usa-checkbox__input" id="group-home" type="checkbox" name="group-home" value="group-home">
+                          <label class="usa-checkbox__label" for="group-home">This residence is in a treatment facility, group home, or other group setting</label>
+                      </div>
                   </fieldset>
 
 
@@ -271,6 +320,90 @@ width: device-width;
               </fieldset>
 
 
+              <fieldset class="usa-fieldset padding-bottom-8">
+                  <legend class="usa-legend">What is your occupation?</legend>
+                  <span class="usa-hint" id="symptomsHint">Select all that apply</span>
+                  <br/><br/>
+                  <div class="grid-row grid-gap">
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Healthcare" type="checkbox" name="occupation" value="Healthcare">
+                          <label class="usa-checkbox__label" for="Healthcare">Healthcare</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Dentistry" type="checkbox" name="occupation" value="Dentistry">
+                          <label class="usa-checkbox__label" for="Dentistry">Dentistry</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Emergency-response-public-safety" type="checkbox" name="occupation" value="Emergency-response-public-safety">
+                          <label class="usa-checkbox__label" for="Emergency-response-public-safety">Emergency response and public safety</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Manufacturing" type="checkbox" name="occupation" value="Manufacturing">
+                          <label class="usa-checkbox__label" for="Manufacturing">Manufacturing</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Meat-poultry-processing" type="checkbox" name="occupation" value="Meat-poultry-processing">
+                          <label class="usa-checkbox__label" for="Meat-poultry-processing">Meat and poultry processing</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="Laboratories" type="checkbox" name="occupation" value="Laboratories">
+                          <label class="usa-checkbox__label" for="Laboratories">Laboratories</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="airline-operations" type="checkbox" name="occupation" value="airline-operations">
+                          <label class="usa-checkbox__label" for="airline-operations">Airline operations</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="retail-operations" type="checkbox" name="occupation" value="retail-operations">
+                          <label class="usa-checkbox__label" for="retail-operations">Retail operations</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="border-transportation-security" type="checkbox" name="occupation" value="border-transportation-security">
+                          <label class="usa-checkbox__label" for="border-transportation-security">Border protection and transportation security</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="correctional-facility" type="checkbox" name="occupation" value="correctional-facility">
+                          <label class="usa-checkbox__label" for="correctional-facility">Correctional facility operations</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="waste-and-wastewater" type="checkbox" name="occupation" value="waste-and-wastewater">
+                          <label class="usa-checkbox__label" for="waste-and-wastewater">Solid waste and wastewater management</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="environmental-services" type="checkbox" name="occupation" value="environmental-services">
+                          <label class="usa-checkbox__label" for="environmental-services">Environmental and janitorial services</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="in-home-repair-services" type="checkbox" name="occupation" value="in-home-repair-services">
+                          <label class="usa-checkbox__label" for="in-home-repair-services">In-home repair services</label>
+                      </div>
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="business-travelers" type="checkbox" name="occupation" value="business-travelers">
+                          <label class="usa-checkbox__label" for="business-travelers">Business travelers</label>
+                      </div>
+
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="post-mortem" type="checkbox" name="occupation" value="post-mortem">
+                          <label class="usa-checkbox__label" for="post-mortem">Post-mortem</label>
+                      </div>
+
+                      <div class="usa-checkbox tablet:grid-col-3">
+                          <input class="usa-checkbox__input" id="student" type="checkbox" name="occupation" value="student">
+                          <label class="usa-checkbox__label" for="student">Student</label>
+                      </div>
+
+                      <div class="usa-checkbox tablet:grid-col-6 padding-top-2">
+                          <input class="usa-checkbox__input" id="not-currently-working" type="checkbox" name="occupation" value="not-currently-working">
+                          <label class="usa-checkbox__label" for="not-currently-working">I have not been working for the past 30 days</label>
+                      </div>
+
+
+
+
+                  </div>
+              </fieldset>
+
+
               <fieldset class="usa-fieldset padding-bottom-6">
                       <legend class="usa-legend">Gender</legend>
                       <span class="usa-hint" id="symptomsHint">Select how you identify for health purposes</span>
@@ -353,7 +486,7 @@ width: device-width;
                           </div>
                           <div class="usa-radio">
                             <input class="usa-radio__input" id="no-hispanic" type="radio" name="ethnicity" value="no-hispanic">
-                            <label class="usa-radio__label" for="no-hispanic">No, I am not hispanic or latino</label>
+                            <label class="usa-radio__label" for="no-hispanic">No, I am not</label>
                           </div>
                       </div>
                   </fieldset>
@@ -499,21 +632,7 @@ width: device-width;
                   </fieldset>
 
 
-                  <fieldset class="usa-fieldset padding-bottom-4 random-sample-questions" id="group-home">
-                      <legend class="usa-legend">Do you live or work in a treatment facility, group home, or other group setting?</legend>
-                      <!-- <span class="usa-hint" id="symptomsHint"></span> -->
-                      <br/>
-                      <div class="grid-row grid-gap">
-                          <div class="usa-radio tablet:grid-col-3">
-                            <input class="usa-radio__input" id="yes-group-home" type="radio" name="group-home" value="yes-group-home">
-                            <label class="usa-radio__label" for="yes-group-home">Yes, I do</label>
-                          </div>
-                          <div class="usa-radio tablet:grid-col-3">
-                            <input class="usa-radio__input" id="no-group-home" type="radio" name="group-home" value="no-group-home">
-                            <label class="usa-radio__label" for="no-group-home">No, I do not</label>
-                          </div>
-                      </div>
-                  </fieldset>
+
 
 
                   <fieldset class="usa-fieldset padding-bottom-4 random-sample-questions">
@@ -522,13 +641,13 @@ width: device-width;
                       <input class="usa-input" style="width: 100px;" id="household-number" name="household-number" type="text" maxlength="6" size="6">
                   </fieldset>
 
-
+<!--
                   <fieldset class="usa-fieldset padding-bottom-4 random-sample-questions">
                       <legend class="usa-legend padding-top-4">What is your occupation?</legend>
                       <span class="usa-hint" id="occupationHint">Optional</span>
                       <label class="usa-label" for="occupation"></label>
                       <input class="usa-input" id="occupation" name="occupation" type="text">
-                  </fieldset>
+                  </fieldset> -->
 
 
                   <fieldset class="usa-fieldset padding-bottom-8 random-sample-questions">
@@ -629,6 +748,25 @@ width: device-width;
       $("#no-mailer").click(function(){
           $('.random-sample-questions').slideUp(600);
       });
+
+      // show / hide additional questions for primary reason for being tested
+      $(function() {
+              $("input[name='reason-for-testing']").click(function() {
+           if ($("#random-sample").is(":checked")) {
+             $('#mailer-id-question').slideDown(600);
+           } else {
+             $('#mailer-id-question').slideUp(400);
+           }
+           if ($("#symptomatic").is(":checked")) {
+             $('#referral-id-question').slideDown(600);
+           } else {
+             $('#referral-id-question').slideUp(400);
+           }
+         });
+       });
+
+
+
 
   </script>
 
